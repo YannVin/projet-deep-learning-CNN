@@ -1,7 +1,7 @@
 # Projet Deep Learning - Classification d'images CIFAR-10 & CIFAR-100
 
 ## Vue d'ensemble
-Ce projet vise à classifier des images issues des ensembles de données CIFAR-10 et CIFAR-100 en utilisant diverses architectures de deep learning. Chaque dossier contient différents modèles entraînés sur les ensembles de données respectifs.
+Ce projet vise à classifier des images issues des ensembles de données CIFAR-10 et CIFAR-100 en utilisant le CNN. Chaque dossier contient différents modèles entraînés sur les ensembles de données respectifs.
 
 ## Structure du Projet
 ```
