@@ -1,14 +1,11 @@
-Basé sur la structure du projet et les fichiers fournis, je vais créer un exemple de fichier `README.md` pour votre projet de classification d'images CIFAR-10 et CIFAR-100 avec différents modèles de deep learning.
+# Projet Deep Learning - Classification d'images CIFAR-10 & CIFAR-100
 
-```markdown
-# Deep Learning Project - CIFAR-10 & CIFAR-100 Image Classification
+## Vue d'ensemble
+Ce projet vise à classifier des images issues des ensembles de données CIFAR-10 et CIFAR-100 en utilisant diverses architectures de deep learning. Chaque dossier contient différents modèles entraînés sur les ensembles de données respectifs.
 
-## Overview
-This project aims to classify images from the CIFAR-10 and CIFAR-100 datasets using various deep learning architectures. Each folder contains different models trained on the respective datasets.
+## Structure du Projet
 
-## Project Structure
-```
-├── models
+├── modèles
 │   ├── cifar10
 │   │   ├── AlexNet.h5
 │   │   ├── CNN_simple.h5
@@ -26,51 +23,43 @@ This project aims to classify images from the CIFAR-10 and CIFAR-100 datasets us
 └── scripts
     ├── cnn_cifar10.ipynb
     └── cnn_cifar100.ipynb
-```
-## Datasets
-- **CIFAR-10**: Contains 60,000 32x32 color images in 10 different classes.
-- **CIFAR-100**: Contains 60,000 32x32 color images in 100 different classes.
 
-## Models
-A variety of models have been trained on CIFAR-10 and CIFAR-100 datasets:
-- **AlexNet**: One of the pioneer deep learning architectures for image classification.
-- **CNN Simple**: A baseline convolutional neural network model for comparison purposes.
-- **DenseNet121 & DenseNet201**: Feature-dense models that connect each layer to every other layer in a feed-forward fashion.
-- **LeNet**: A classic CNN architecture that is smaller and quicker to train.
-- **ResNet50**: Implements residual learning to facilitate training of deeper network architectures.
-- **VGGNet**: Known for its simplicity and depth.
+## Ensembles de Données
+- **CIFAR-10** : Contient 60 000 images couleur de 32x32 pixels réparties en 10 classes différentes.
+- **CIFAR-100** : Contient 60 000 images couleur de 32x32 pixels réparties en 100 classes différentes.
+
+## Modèles
+Une variété de modèles ont été entraînés sur les ensembles de données CIFAR-10 et CIFAR-100 :
+- **AlexNet** : L'une des architectures pionnières du deep learning pour la classification d'images.
+- **CNN Simple** : Un modèle de réseau de neurones convolutif de base pour des fins de comparaison.
+- **DenseNet121 & DenseNet201** : Des modèles denses en fonctionnalités qui connectent chaque couche à toutes les autres de manière feed-forward.
+- **LeNet** : Une architecture CNN classique qui est plus petite et plus rapide à entraîner.
+- **ResNet50** : Implémente l'apprentissage résiduel pour faciliter la formation d'architectures de réseau plus profondes.
+- **VGGNet** : Connu pour sa simplicité et sa profondeur.
 
 ## Scripts
-- `cnn_cifar10.ipynb`: Jupyter notebook containing the code for training and evaluating models on CIFAR-10.
-- `cnn_cifar100.ipynb`: Jupyter notebook containing the code for training and evaluating models on CIFAR-100.
+- `cnn_cifar10.ipynb` : Un notebook Jupyter contenant le code pour l'entraînement et l'évaluation des modèles sur CIFAR-10.
+- `cnn_cifar100.ipynb` : Un notebook Jupyter contenant le code pour l'entraînement et l'évaluation des modèles sur CIFAR-100.
 
-## Requirements
-This project requires Python 3 and the following Python libraries installed:
+## Prérequis
+Ce projet nécessite Python 3 et les bibliothèques Python suivantes installées :
 - NumPy
 - Matplotlib
 - TensorFlow
 
-## Usage
-To use the trained models, load them using TensorFlow Keras API:
+## Utilisation
+Pour utiliser les modèles entraînés, chargez-les en utilisant l'API Keras de TensorFlow :
 ```python
 from tensorflow.keras.models import load_model
 
-# Example for CIFAR-10 AlexNet model
+# Exemple pour le modèle AlexNet CIFAR-10
 model = load_model('models/cifar10/AlexNet.h5')
 ```
 
-To re-train or evaluate the models, run the Jupyter notebooks:
-- For CIFAR-10: `scripts/cnn_cifar10.ipynb`
-- For CIFAR-100: `scripts/cnn_cifar100.ipynb`
+Pour ré-entraîner ou évaluer les modèles, exécutez les notebooks Jupyter :
+- Pour CIFAR-10 : `scripts/cnn_cifar10.ipynb`
+- Pour CIFAR-100 : `scripts/cnn_cifar100.ipynb`
 
-## Results
-The results of the model classification can be visualized in the notebooks, including accuracy and loss metrics.
+## Résultats
+Les résultats de la classification des modèles peuvent être visualisés dans les notebooks, y compris les métriques de précision et de perte.
 
-## Contributing
-Contributions are welcome! For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
-```
-
-Ce `README.md` donne un aperçu général du projet, y compris la structure du projet, les datasets utilisés, une description des modèles, comment utiliser les modèles, et comment contribuer au projet. Vous pouvez l'ajuster en fonction de vos besoins spécifiques, ajouter des sections pour des instructions d'installation plus détaillées, des exemples de code supplémentaires, des résultats spécifiques de classification, ou toute autre information pertinente que vous souhaitez inclure.
