@@ -1,5 +1,8 @@
 # Projet Deep Learning - Classification d'images CIFAR-10 & CIFAR-100
 
+VINCENT Yann p1906701
+TANG Kevin p1501263
+
 ## Vue d'ensemble
 Ce projet vise à classifier des images issues des ensembles de données CIFAR-10 et CIFAR-100 en utilisant le CNN. Chaque dossier contient différents modèles entraînés sur les ensembles de données respectifs.
 
